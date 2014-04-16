@@ -1,0 +1,11 @@
+{
+  "name": "cordova-seed",
+  "description": "A starter cordova projct incorporating bower, gulp, angularjs and ionic",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bogdanrybak/cordova-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "ionic": "~0.9.27"
+  }
+}
