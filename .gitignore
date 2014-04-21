@@ -3,3 +3,5 @@ platforms/
 plugins/
 www/
 app/bower_components/
+app/css/
+.sass-cache/
