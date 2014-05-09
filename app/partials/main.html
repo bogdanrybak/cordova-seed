@@ -1,0 +1,30 @@
+<ion-view title="Tasks">
+    <ion-content class="padding" ng-controller="DashboardCtrl">
+
+        <ul class="list">
+            <li class="item item-checkbox" ng-repeat="task in tasks">
+                <label class="checkbox">
+                    <input type="checkbox" ng-model="task.completed">    
+                </label>
+                {{task.body}}
+            </li>
+        </ul>
+        
+        <div class="padding">
+            <label class="item item-input item-stacked-label">
+                <input type="text" placeholder="New task..." ng-model="formData.newTaskBody">
+            </label>
+        </div>
+
+        <div class="padding">
+            <button class="button button-block" ng-click="addTask(formData.newTaskBody)">
+                Add
+            </button>
+        </div>
+
+        <div class="padding">
+            <a href="#/login" class="button button-block">Login page</a>
+        </div>
+
+    </ion-content>
+</ion-view>

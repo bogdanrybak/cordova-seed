@@ -1,10 +1,34 @@
-#Currently work in progress
-This workflow is currently in development and not all tasks are functional. Below are some instructions.
+# Seed project
+This project is an example for structuring your cordova applications.
 
 # Setup
-We will get a little bit fancy with the command line here so whip out your favourite shell and let's proceed. This setup is geared towards Windows development. PowerShell recommended.
+This setup is geared towards Windows development. PowerShell or cmd will do.
 
-# Android
+### Node.js and related cli tools
+Get either [Node.js](http://nodejs.org/) or [nodist](https://github.com/marcelklehr/nodist) in case you need to manage multiple node versions.
+
+*Remember to restart your shell window after performing all of the above in order to get PATH changes*
+
+**Make sure you also have git installed and accessible through your command line.**
+
+Now we need to install some node based tools globally:
+
+```
+npm install -g cordova gulp bower
+```
+
+Now cd to the project's root directory and execture the following
+```
+npm install && bower install
+```
+
+use `gulp build` to build the app and `gulp watch` to setup development
+
+# Windows Phone 8 setup
+
+Get [Window Phone 8 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
+
+# Android setup
 Take note of all the paths you install into so that we can modify our PATH variable later.
 
 ## Required downloads
@@ -33,23 +57,3 @@ Now go to `%ANDROID_HOME%` and run `SDK MANAGER.exe`. Make sure you have install
 In **Tools** you should have Android SDK Tools, ANdroid SDK Platform-tools, Android SDK Build-tools.
 
 In **Extras** get Google Play services and Google USB Driver.
-
-### Node.js and related cli tools
-Get either [Node.js](http://nodejs.org/) or [nodist](https://github.com/marcelklehr/nodist) in case you need to manage multiple node versions.
-
-*Remember to restart your shell window after performing all of the above in order to get PATH changes*
-
-**Make sure you also have git installed and accessible through your command line.**
-
-Now we need to install some node based tools globally:
-
-```
-npm install -g cordova gulp bower
-```
-
-Now cd to the project's root directory and execture the following
-```
-npm install 
-```
-
-The setup task should grab all the neccessary dependencies.
