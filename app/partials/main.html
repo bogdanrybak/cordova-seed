@@ -2,11 +2,12 @@
     <ion-content class="padding" ng-controller="DashboardCtrl">
 
         <ul class="list">
-            <li class="item item-checkbox" ng-repeat="task in tasks">
+            <li class="item item-checkbox" ng-repeat="(id, task) in tasks">
                 <label class="checkbox">
-                    <input type="checkbox" ng-model="task.completed">    
+                    <input type="checkbox" ng-model="task.complete" ng-change="tasks.$save(id)">    
                 </label>
-                {{task.body}}
+                <label>{{task.body}}</label>
+                <button class="ion-trash-b" ng-click="removeTask(id)"></button>
             </li>
         </ul>
         

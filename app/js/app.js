@@ -4,7 +4,7 @@
 // 'app.services' is found in services.js
 // 'app.controllers' is found in controllers.js
 
-var app = angular.module('app', ['ionic', 'app.controllers', 'app.services']);
+var app = angular.module('app', ['ionic', 'app.controllers', 'app.services', 'firebase']);
 angular.module('app.controllers', []);
 angular.module('app.services', []);
 
