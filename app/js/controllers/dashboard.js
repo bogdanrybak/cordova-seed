@@ -15,4 +15,8 @@ angular.module('app.controllers')
 
         $scope.formData.newTaskBody = '';
     };
+
+    $scope.removeTask = function(id) {
+        Tasks.remove(id);
+    }
 });
